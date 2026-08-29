@@ -2,7 +2,7 @@
 
 ## 📌 Project Overview
 
-This project analyzes e-commerce transaction and clickstream data using **PostgreSQL** and **Python** to answer a set of business questions across different levels of analytical complexity.
+This project analyzes e-commerce transaction and clickstream data using **PostgreSQL** and **Power BI** to answer a set of business questions across different levels of analytical complexity.
 
 The project combines transactional data with customer browsing behavior to investigate sales performance, customer behavior, product performance, and e-commerce activity.
 
@@ -43,7 +43,8 @@ The main objectives of this project are to:
 * Load cleaned data while preserving referential integrity.
 * Use SQL to answer business questions ranging from basic descriptive analysis to more advanced analytical problems.
 * Demonstrate practical PostgreSQL and SQL skills in an e-commerce analytics context.
-* Extract actionable insights from transactional and clickstream data.
+* Build a good semantic model with the data from Postgres which is already cleaned.
+* Create visuals with Power BI to answer business questions and creating some measures to support the analysis
 
 ---
 
