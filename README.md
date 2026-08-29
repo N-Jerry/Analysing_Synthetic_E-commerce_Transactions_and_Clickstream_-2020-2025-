@@ -43,7 +43,7 @@ The main objectives of this project are to:
 * Load cleaned data while preserving referential integrity.
 * Use SQL to answer business questions ranging from basic descriptive analysis to more advanced analytical problems.
 * Demonstrate practical PostgreSQL and SQL skills in an e-commerce analytics context.
-* Build a good semantic model with the data from Postgres which is already cleaned.
+* Build a good semantic model with Power BI using the data from Postgres which is already cleaned.
 * Create visuals with Power BI to answer business questions and creating some measures to support the analysis
 
 ---
