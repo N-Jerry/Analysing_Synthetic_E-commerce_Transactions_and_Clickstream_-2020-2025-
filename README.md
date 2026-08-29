@@ -69,6 +69,13 @@ E-commerce-Transactions-Clickstream/
 │   ├── order_items.csv
 │   └── reviews.csv
 │
+├── Power BI/
+│   ├── images/
+│   │   └── fact_clickstream :Having images of visuals related to this grain(clicks)
+│   │   └── fact_review: Having images of visuals to this grain(review)
+│       └── fact_sales: Having images of visuals to this grain(sales).
+|      A row here is one per order which is different from the other fact not included in the images which is one row per order per product
+|   
 ├── Table_Definition&Ingestion/
 │   ├── table_definition.sql
 │   ├── data_ingestion.sql
@@ -135,7 +142,7 @@ The datasets are inserted in the appropriate order based on their relationships 
 
 ### Why Python was used for ingestion
 
-The `data_ingestion.sql` script contains SQL `INSERT` statements that could be used to populate the database if the source data were already clean and appropriately formatted.
+The `data_ingestion.sql` script contains `\copy` psql commands for each table that could be used to populate the database if the source data were already clean and appropriately formatted.
 
 However, because the raw CSV files require data preparation before insertion, the Python notebook provides a more suitable ingestion process.
 
@@ -200,6 +207,7 @@ The goal is not simply to demonstrate SQL syntax, but to use SQL to answer **bus
 
 | Technology           | Purpose                                       |
 | -------------------- | --------------------------------------------- |
+| **Power BI**         | Data modeling and visualisation               |
 | **PostgreSQL**       | Relational database and SQL analysis          |
 | **SQL**              | Data analysis and business question answering |
 | **Python**           | Data preparation and ingestion                |
@@ -233,9 +241,9 @@ Cleaned datasets are loaded into PostgreSQL in dependency order to preserve refe
 
 SQL scripts are used to answer business questions at basic, intermediate, and advanced levels.
 
-### 6. Insights
+### 6. Visualisation
 
-The results of the SQL analysis are used to identify patterns in customer activity, sales, products, and e-commerce behavior.
+Creating visuals in Power BI to better share findings and answer business questions on the 3 identified **"grains"** of our data.
 
 ---
 
@@ -260,12 +268,9 @@ The analysis explores several aspects of the e-commerce business, including:
 
 Potential extensions to the project include:
 
-* Building an analytical/star schema from the transactional database.
-* Connecting PostgreSQL to **Power BI** for interactive dashboards.
 * Creating reusable SQL views for frequently used business metrics.
 * Implementing automated data ingestion.
-* Adding scheduled data quality checks.
-* Developing additional customer segmentation and retention analysis.
+* Adding data quality checks before ingestion into postgres.
 
 ---
 
