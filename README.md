@@ -74,7 +74,7 @@ E-commerce-Transactions-Clickstream/
 │   │   └── fact_clickstream :Having images of visuals related to this grain(clicks)
 │   │   └── fact_review: Having images of visuals to this grain(review)
 │       └── fact_sales: Having images of visuals to this grain(sales).
-|      A row here is one per order which is different from the other fact not included in the images which is one row per order per product
+|      A row here is one per order which is different from the other(fact_item_sales) not included in the images which is one row per order per product
 |   
 ├── Table_Definition&Ingestion/
 │   ├── table_definition.sql
