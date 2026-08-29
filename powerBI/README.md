@@ -3,6 +3,13 @@
 
     This section is about the Power BI part of the project. It has the visuals taken from Power BI
 
+These are my four fact tables and dimension tables linked to them.
+
+    fact_clikcstream(dim_country, dim_customers, dim_device, dim_event, dim_product, dim_source, dim_date)
+    fact_item_sales(dim_product)
+    fact_review(dim_product, dim_date, dim_device, dim_country, dim_customer, dim_review, dim_source)
+    fact_sales(dim_date, dim_device, dim_country, dim_source, dim_customer, dim_payment_method)
+
 ## Page Overview
 
 ## Page 1: Sales by Geography & Year
